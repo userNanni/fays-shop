@@ -10,10 +10,15 @@ import {
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
 
-export function MenuBar() {
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+
+import { SunIcon, MoonIcon } from "@radix-ui/react-icons";
+
+import { Toggle } from "@/components/ui/toggle";
+
+function MenuBar() {
   return (
     <NavigationMenu className="w-100">
-        
       <NavigationMenuList>
         <NavigationMenuItem>
           <NavigationMenuTrigger>Getting started</NavigationMenuTrigger>
@@ -48,9 +53,19 @@ export function MenuBar() {
           </NavigationMenuContent>
         </NavigationMenuItem>
       </NavigationMenuList>
+      <Avatar>
+        <AvatarImage src="https://github.com/shadcn.png" />
+        <AvatarFallback>CN</AvatarFallback>
+      </Avatar>
+      <Toggle>
+        <SunIcon />
+        <MoonIcon />
+      </Toggle>
     </NavigationMenu>
   );
 }
+
+export default MenuBar;
 
 const ListItem = React.forwardRef<
   React.ElementRef<"a">,

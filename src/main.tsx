@@ -5,7 +5,6 @@ import "./globals.css";
 
 import Root from "./routes/root.tsx";
 import ErrorPage from "./errorPage.tsx";
-import { ThemeProvider } from "./components/themeProvider.tsx";
 
 const router = createBrowserRouter([
   {
@@ -16,9 +15,7 @@ const router = createBrowserRouter([
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
-  <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
-    <React.StrictMode>
-      <RouterProvider router={router} />
-    </React.StrictMode>
-  </ThemeProvider>
+  <React.StrictMode>
+    <RouterProvider router={router} />
+  </React.StrictMode>
 );
