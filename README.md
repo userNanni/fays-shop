@@ -1,3 +1,7 @@
+# E-Commerce da Fazenda de Aeronáutica de Pirassununga
+
+Durante uma visita a FAYS foi apresentada a necessidade de se haver um Website público para facilitar os pedidos de produtos da fazenda, não tendo entrega, apenas retirada no Local, com integração com a Api do PagTesouro.
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
