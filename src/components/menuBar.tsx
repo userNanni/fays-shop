@@ -12,10 +12,6 @@ import {
 
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
-import { SunIcon, MoonIcon } from "@radix-ui/react-icons";
-
-import { Toggle } from "@/components/ui/toggle";
-
 function MenuBar() {
   return (
     <NavigationMenu className="w-100">
@@ -57,10 +53,6 @@ function MenuBar() {
         <AvatarImage src="https://github.com/shadcn.png" />
         <AvatarFallback>CN</AvatarFallback>
       </Avatar>
-      <Toggle>
-        <SunIcon />
-        <MoonIcon />
-      </Toggle>
     </NavigationMenu>
   );
 }
